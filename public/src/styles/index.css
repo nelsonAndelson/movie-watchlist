@@ -1,0 +1,102 @@
+:root {
+  --fontFamily: "Inter", sans-serif;
+  --primary-color: #121212;
+  --secondary-color: #a5a5a5;
+  --tertiary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: var(--primary-color);
+}
+
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Header */
+header {
+  background: linear-gradient(
+      69deg,
+      rgba(39, 39, 39, 0.65) 0%,
+      rgba(0, 0, 0, 0.7) 63%
+    ),
+    url(../../assets/images/movie-bg-mobile.jpg);
+  background-size: cover;
+  height: 35vh;
+  padding: 8em 3em;
+  color: var(--tertiary-color);
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.8rem;
+}
+header a {
+  align-self: center;
+}
+
+header input,
+header button,
+header i {
+  padding: 1rem;
+  border: none;
+  color: var(--tertiary-color);
+  font-family: var(--fontFamily);
+  font-size: 1em;
+}
+
+header input {
+  width: 100%;
+  outline: none;
+}
+
+header i,
+header input {
+  background-color: hsl(0, 0%, 13%);
+  align-self: center;
+}
+header i {
+  padding: 1.12em 0.5em;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+header button {
+  padding: 0 2em;
+  background-color: hsl(0, 0%, 23%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background: hsl(0, 0%, 11%);
+}
+
+.search-form {
+  z-index: 1;
+  position: absolute;
+  left: 45px;
+  right: 45px;
+  bottom: -1.5rem;
+}
+
+/* Main content */
+
+
+/* utilities */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
