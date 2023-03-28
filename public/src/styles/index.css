@@ -48,7 +48,7 @@ header a {
 
 header input,
 header button,
-header i {
+header > .search-icon {
   padding: 1rem;
   border: none;
   color: var(--tertiary-color);
@@ -61,12 +61,12 @@ header input {
   outline: none;
 }
 
-header i,
+header .search-icon,
 header input {
   background-color: hsl(0, 0%, 13%);
   align-self: center;
 }
-header i {
+header .search-icon {
   padding: 1.12em 0.5em;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -93,7 +93,15 @@ header button:hover {
 }
 
 /* Main content */
+.start-exploring {
+  text-align: center;
+  color: hsl(0, 0%, 13%);
+  margin-top: 50%;
+}
 
+.start-exploring i {
+  font-size: 5em;
+}
 
 /* utilities */
 .flex {
